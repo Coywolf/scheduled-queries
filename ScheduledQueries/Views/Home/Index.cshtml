@@ -1,8 +1,14 @@
 ﻿<html>
 <head>
     <title>Scheduled Queries</title>
+
+    <link href="/Content/semantic.min.css" rel="stylesheet"/>
+    <link href="/Content/styles.css" rel="stylesheet" />
+
+    <script data-main="/Scripts/app" src="/Scripts/lib/require.js"></script>
 </head>
 <body>
-    
+    <div data-bind="component: {name: 'nav-bar', params: {route: route}}"></div>
+    <div id="page" data-bind="component: {name: route().page, params: route}"></div>
 </body>
 </html>
