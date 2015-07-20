@@ -119,6 +119,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DatabaseModels\Query.cs" />
+    <Compile Include="Models\DatabaseModels\QueryVersion.cs" />
+    <Compile Include="Models\DatabaseModels\Task.cs" />
+    <Compile Include="Models\DatabaseModels\TaskExecution.cs" />
+    <Compile Include="Models\DatabaseModels\TaskOutput.cs" />
+    <Compile Include="Models\DatabaseModels\TaskQueryAssoc.cs" />
+    <Compile Include="Models\SqContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -155,7 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
