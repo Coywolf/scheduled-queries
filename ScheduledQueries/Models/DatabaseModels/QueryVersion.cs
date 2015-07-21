@@ -12,8 +12,11 @@ namespace ScheduledQueries.Models.DatabaseModels
 
         public int QueryId { get; set; }
 
-        public DateTime CreatedDate { get; set; }
+        public int VersionId { get; set; }
+        public string QuerySql { get; set; }
+        public DateTime CreatedDate { get; set; }        
 
         public virtual Query Query { get; set; }
+        public virtual ICollection<TaskExecution> TaskExecutions { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ScheduledQueries.Models.DatabaseModels
 {
-    public enum TaskOutputTypes
+    public enum TaskOutputType
     {
         Email,
         File
@@ -16,7 +16,7 @@ namespace ScheduledQueries.Models.DatabaseModels
         public int TaskOutputId { get; set; }
 
         public int TaskId { get; set; }
-        public TaskOutputTypes OutputType { get; set; }
+        public TaskOutputType OutputType { get; set; }
 
         public virtual Task Task { get; set; }
     }
