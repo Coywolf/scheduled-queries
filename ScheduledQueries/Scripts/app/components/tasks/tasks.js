@@ -1,6 +1,8 @@
 ﻿define(['jquery', 'knockout', 'text!./tasks.html'], function($, ko, htmlString) {
     function tasksViewModel(params) {
-        console.log('new vm');
+        var self = this;
+
+        self.Tasks = ['one', 'two', 'three']
     }
 
     return {

@@ -1,0 +1,15 @@
+.main.container {
+    margin-top: 7em;
+}
+
+.ui.green-left.segment {
+    border-left: 8px solid #21ba45;
+}
+
+.ui.red-left.segment {
+    border-left: 8px solid #db2828;
+}
+
+.ui.yellow-left.segment {
+    border-left: 8px solid #fbbd08;
+}
